@@ -91,6 +91,7 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         mUnreadNumView.setOnClickListener(this);
         mUnreadNumView.setDragListencer(this);
 
+
         mFragment.add(MyFragment2.getInstance());
         mFragment.add(MyFragment1.getInstance());
         mFragment.add(MyFragment3.getInstance());
@@ -104,8 +105,14 @@ public class MainActivity extends BaseActivity implements ViewPager.OnPageChange
         initData();
     }
 
+    @Override
+    protected void onResume()
+    {
+        super.onResume();
 
-
+        mUnreadNumView.setText("3");
+        mUnreadNumView.setVisibility(View.VISIBLE);
+    }
 
     @Override
     public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels)

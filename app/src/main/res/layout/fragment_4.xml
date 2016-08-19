@@ -7,6 +7,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="用户"
+        android:text="4"
         android:id="@+id/textView4"/>
 </LinearLayout>

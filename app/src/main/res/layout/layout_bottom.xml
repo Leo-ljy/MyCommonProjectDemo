@@ -210,7 +210,7 @@
                     android:layout_marginRight="16dp"
                     android:layout_toRightOf="@id/tab_img_me"
                     android:background="@drawable/aii"
-                    android:visibility="gone" />
+                    android:visibility="visible" />
 
             </FrameLayout>
         </RelativeLayout>

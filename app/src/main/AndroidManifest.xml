@@ -2,6 +2,23 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
           package="com.hzmy.zm.mysettingdemo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 获取机型信息权限 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+
+    <!-- 查看 Wi-Fi 状态 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 查看网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,6 +32,30 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+
+        <activity android:name=".ui.activity.AboutUsActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.AccountSettingActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.FunctionIntroducedActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.MyAccountActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.UpdateLogActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.UpdateNameActivity"
+                  android:screenOrientation="portrait"
+        />
+        <activity android:name=".ui.activity.UpdatePasswordActivity"
+                    android:screenOrientation="portrait"
+    />
+
+
     </application>
 
 </manifest>
